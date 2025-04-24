@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-line">
+                <a href="#">О Проекте</a>
+                <a href="#">Видео</a>
+                <div class="header-logo">
+                    <img src="../img/mart_logo.svg" alt="logo">
+                </div>
+                <button class="but" onclick="openPopup()">Написать</button>
+
+                <div id="popup">
+                    <div class="popup-content">
+                        <span onclick="closePopup()" class="close">&times;</span>
+                        <h2>Написать нам</h2>
+                        <input id="username" type="text" placeholder="Ваше имя">
+                        <textarea id="message" placeholder="Ваше сообщение"></textarea>
+                        <button class="send-btn" onclick="sendMessage()">Отправить</button>
+                    </div>
+                </div>
+
+                <div id="alert-box" class="alert-box"></div>
+            </div>
+            <div class="nav">
+                <a href="../index.html">Главная</a>
+                <a href="./page2.html">Произведение</a>
+                <a href="#">Места</a>
+                <a href="#">Мнение</a>
+                <a href="#">Новости</a>
+                <a href="#">Персоны</a>
+                <a href="#">События</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="work">
+                    <h1>Выставка работ Геннадия Козела открыта для всех</h1>
+                    <a class="interesting" href="#">Источник prvision.by , Дата: 12 Фев. 2022</a>
+                    <img src="../img/pageimg.jpg" alt="pageimg">
+                    <p>Бесплатная арт-галерея в центре Минска выставила картины-символы художника Геннадия Козела.
+                        Работы белоруса вдохновлены творчеством Веласкеса, Гойи и Рембрандта. Находится экспозиция в
+                        отделении Банка Дабрабыт на проспекте Победителей, 3, причем полотна можно увидеть как внутри,
+                        так и снаружи – за остекленным фасадом.</p>
+                    <p>В экспозицию вошли несколько десятков картин известного живописца. Среди них – портреты и
+                        образы-символы, которые предстоит разгадать посетителям. Как колорист Геннадий Козел смело
+                        играет цветами – от этого картины смотрятся эффектно и оставляют яркие впечатления. Многие
+                        полотна можно увидеть только на выставке.
+                    </p>
+                    <img src="../img/work1.jpg" alt="work">
+                    <p>Под выставку в Банке Дабрабыт выделили большую часть отделения и панорамный фасад. Причем сделали
+                        так, чтобы на каждой витрине было по две картины – по одной с внешней и внутренней стороны.
+                        Приобщаться к искусству можно и днем, и ночью. Внутри арт-галереи стоят мягкие стулья и диваны –
+                        можно пообщаться на фоне полотен.</p>
+                    <p>
+                        <i>«В цифровую эпоху много места для работы банка и не нужно, но мы хотим использовать
+                            пространство в центре Минска для того, чтобы увлечь людей, показать что-то новое, заставить
+                            задуматься и отвлечься от городской суеты. И с этой задачей работы Геннадия Козела
+                            справляются прекрасно. Ведь каждая картина – это загадка, которую не так просто и разгадать.
+                            И на этом мы не остановимся – впереди у арт-галереи много новых экспозиций»,</i> –
+                        рассказывают в Банке Дабрабыт.
+                    </p>
+                    <img src="../img/work2.jpg" alt="work2">
+                    <p>Выставка открыта с понедельника по пятницу с 09:00 до 20:00 и в субботу с 10:00 до 18:00. Вход
+                        свободный, обслуживаться для этого в Банке Дабрабыт необязательно. Геннадий Козел пишет картины
+                        и занимается монументальным искусством. Его работы представлены в частных коллекциях Беларуси,
+                        России, США, Великобритании, Франции и Германии. Художник умело использует разные оттенки и не
+                        боится работать с черным цветом. Картины колориста содержат спрятанные символы. </p>
+                    <em>Еще на эту тему</em>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="topics-flex">
+                    <div class="topics">
+                        <img src="../img/topics1.png" alt="topics1">
+                        <p>19 ноября 2020</p>
+                        <a class="interesting" href="#">19 ноября в столице <br> стартует фестиваль <br> искусства «Арт
+                            <br> -Минск-2020»</a>
+                    </div>
+                    <div class="topics">
+                        <img src="../img/topics2.jpg" alt="topics2">
+                        <p>31 марта 2020</p>
+                        <a class="interesting" href="#">Изоляция. Выставка <br> Романа Каминского</a>
+                    </div>
+                    <div class="topics">
+                        <img src="../img/topics3.jpg" alt="topics3">
+                        <p>18 марта 2020</p>
+                        <a class="interesting" href="#">Спартак Арутюнян, <br> живописец и скульптор</a>
+                    </div>
+                    <div class="topics">
+                        <img src="../img/topics4.jpg" alt="topics4">
+                        <p>17 марта 2020</p>
+                        <a class="interesting" href="#">Персональная выставка <br> Сергея Гриневича</a>
+                    </div>
+                    <div class="topics">
+                        <img src="../img/topics5.jpg" alt="topics5">
+                        <p>21 февраля 2020</p>
+                        <a class="interesting" href="#">Выставка живописи Анны <br> Силивончик «Много букв»</a>
+                    </div>
+                    <div class="topics">
+                        <img src="../img/topics6.jpg" alt="topics6">
+                        <p>7 февраля 2020</p>
+                        <a class="interesting" href="#">Излом</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <hr>
+            <footer>
+                <div class="footer-left">
+                    <img src="../img/mart_logo.svg" alt="logo">
+                    <a href="#">О Проекте</a>
+                    <a href="#">Контакты</a>
+                    <p>Присоединяйтесь к нам</p>
+                    <img src="../img/facebook.png" alt="facebook">
+                    <img src="../img/youtube.png" alt="youtube">
+                </div>
+                <div class="footer-right">
+                    <p>© 2005-2022 Современное белорусское искусство Mart.BY</p>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <script src="../style.js"></script>
+</body>
+</html>
