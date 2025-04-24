@@ -659,6 +659,22 @@ em {
     font-weight: 400;
     font-size: 18px;
 }
+.image-container {
+    font-family: var(--first-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    margin: 20px 10px;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size: 2vw;
+    color: #e3d6d6;
+    padding: 20px;
+    border-radius: 12px;
+}
 
 /* ===== АДАПТИВ ДЛЯ НОУТБУКОВ (до 1366px) ===== */
 @media (max-width: 1366px) {
@@ -732,6 +748,10 @@ em {
     .box-flex {
         gap: 30px;
     }
+    .image-container {
+        height: 600px;
+        font-size: 2.5vw;
+    }
 }
 
 /* ===== АДАПТИВ ДЛЯ ПЛАНШЕТОВ (до 992px) ===== */
@@ -759,6 +779,11 @@ em {
 
     .video-block {
         padding: 0.5rem;
+    }
+    .image-container {
+        height: 500px;
+        font-size: 3vw;
+        padding: 15px;
     }
 }
 
@@ -806,6 +831,11 @@ em {
 
     .container {
         padding: 0 10px;
+    }
+    .image-container {
+        height: 400px;
+        font-size: 4vw;
+        padding: 10px;
     }
 }
 
@@ -929,5 +959,10 @@ em {
     .art-title {
         padding: 0 20px !important;
         font-size: 16px !important;
+    }
+    .image-container {
+        height: 300px;
+        font-size: 4.5vw;
+        padding: 8px;
     }
 }
