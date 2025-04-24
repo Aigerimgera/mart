@@ -916,7 +916,6 @@ em {
 @media (max-width: 1500px) {
     .art-card {
         width: 90% !important;
-        height: auto !important;
         padding-bottom: 40px;
     }
 
