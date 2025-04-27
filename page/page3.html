@@ -1,66 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/css.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Art Museum Card</title>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="header-line">
-                <a href="#">О Проекте</a>
-                <a href="#">Видео</a>
-                <div class="header-logo">
-                    <img src="../img/mart_logo.svg" alt="logo">
-                </div>
-                <button class="but" onclick="openPopup()">Написать</button>
-                <div id="popup">
-                    <div class="popup-content">
-                        <span onclick="closePopup()" class="close">&times;</span>
-                        <h2>Написать нам</h2>
-                        <input id="username" type="text" placeholder="Ваше имя">
-                        <textarea id="message" placeholder="Ваше сообщение"></textarea>
-                        <button class="send-btn" onclick="sendMessage()">Отправить</button>
-                    </div>
-                </div>
-                <div id="alert-box" class="alert-box"></div>
-            </div>
-            <div class="nav">
-                <a href="./page3.html">Главная</a>
-                <a href="./page1.html">Произведение</a>
-                <a href="#">Места</a>
-                <a href="#">Мнение</a>
-                <a href="#">Новости</a>
-                <a href="#">Персоны</a>
-                <a href="../index.html">События</a>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-        <div class="image-container">
-            <p>У художника есть вселенная в его разуме и руках</p>
-        </div>
-    </div>
+    <script>
+        // Фон для страницы
+        document.body.style.background = '#f0f4f8';
+        document.body.style.fontFamily = "'Raleway', sans-serif";
+        document.body.style.display = 'flex';
+        document.body.style.justifyContent = 'center';
+        document.body.style.alignItems = 'center';
+        document.body.style.minHeight = '100vh';
+        document.body.style.margin = '0';
+        document.body.style.padding = '20px';
+        document.body.style.boxSizing = 'border-box';
 
+        // Обёртка карточки
+        const div = document.createElement('div');
+        div.className = 'art-card'; // Добавляем класс для медиазапросов
+        div.style.width = '1400px';
+        div.style.height = '1000px';
+        div.style.textAlign = 'center';
+        div.style.background = 'white';
+        div.style.margin = 'auto';
+        div.style.backgroundImage = 'linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.7)), url(https://images.unsplash.com/photo-1579547945413-497e1b99dac0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80)';
+        div.style.backgroundRepeat = 'no-repeat';
+        div.style.backgroundSize = 'cover';
+        div.style.backgroundPosition = 'center';
+        div.style.borderRadius = '15px';
+        div.style.boxShadow = '0 10px 30px rgba(0,0,0,0.15)';
+        div.style.position = 'relative';
+        div.style.overflow = 'hidden';
 
-    <div class="container">
-        <hr>
-        <footer>
-            <div class="footer-left">
-                <img src="../img/mart_logo.svg" alt="logo">
-                <a href="#">О Проекте</a>
-                <a href="#">Контакты</a>
-                <p>Присоединяйтесь к нам</p>
-                <img src="../img/facebook.png" alt="facebook">
-                <img src="../img/youtube.png" alt="youtube">
-            </div>
-            <div class="footer-right">
-                <p>© 2005-2022 Современное белорусское искусство Mart.BY</p>
-            </div>
-        </footer>
-    </div>
-    <script src="../style.js"></script>
+        // Адаптивная аватарка
+        const img = document.createElement('img');
+        img.className = 'artist-avatar'; // Добавляем класс для медиазапросов
+        img.src = 'https://via.placeholder.com/200/cccccc/ffffff?text=Art';
+        img.style.width = '500px';
+        img.style.height = '500px';
+        img.style.maxWidth = '100%';
+        img.style.border = 'solid 4px rgba(255, 255, 255, 0.7)';
+        img.style.borderRadius = '50%';
+        img.style.position = 'relative';
+        img.style.top = '5%';
+        img.style.objectFit = 'cover';
+        img.style.backgroundColor = 'white';
+        img.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+        img.style.margin = '0 auto';
+        img.style.display = 'block';
+
+        // Имя художника
+        const h1 = document.createElement('h1');
+        h1.textContent = 'Загрузка...';
+        h1.style.position = 'relative';
+        h1.style.top = '5%';
+        h1.style.fontSize = '36px';
+        h1.style.color = 'rgb(79, 79, 78)';
+        h1.style.fontFamily = "'Playfair Display', serif";
+        h1.style.fontWeight = '700';
+        h1.style.margin = '20px 0 0';
+        h1.style.padding = '0 30px';
+
+        // Описание (специальность)
+        const text1 = document.createElement('p');
+        text1.textContent = 'Художник';
+        text1.style.position = 'relative';
+        text1.style.top = '5%';
+        text1.style.fontSize = '18px';
+        text1.style.color = '#7f8c8d';
+        text1.style.margin = '10px 0 0';
+        text1.style.letterSpacing = '1px';
+
+        // Название работы (из API)
+        const text2 = document.createElement('p');
+        text2.className = 'art-title'; // Добавляем класс для медиазапросов
+        text2.textContent = 'Загрузка данных из музея...';
+        text2.style.position = 'relative';
+        text2.style.top = '5%';
+        text2.style.color = '#34495e';
+        text2.style.fontWeight = '500';
+        text2.style.padding = '0 50px';
+        text2.style.lineHeight = '1.6';
+        text2.style.fontSize = '18px';
+        text2.style.margin = '20px 0';
+
+        // Годы жизни или период
+        const text3 = document.createElement('p');
+        text3.textContent = '...';
+        text3.style.position = 'relative';
+        text3.style.top = '5%';
+        text3.style.color = '#95a5a6';
+        text3.style.fontStyle = 'italic';
+        text3.style.marginTop = '20px';
+
+        // Добавляем элементы
+        div.append(img, h1, text1, text2, text3);
+        document.body.append(div);
+
+        // ========== Музейный API ==========
+        async function loadRandomArtwork() {
+            try {
+                // 1. Сначала получаем список всех ID объектов
+                const response = await fetch('https://collectionapi.metmuseum.org/public/collection/v1/objects');
+                const data = await response.json();
+
+                // 2. Выбираем случайный ID (ограничим первые 1000 для скорости)
+                const randomId = data.objectIDs[Math.floor(Math.random() * Math.min(1000, data.objectIDs.length))];
+
+                // 3. Загружаем данные по конкретному произведению
+                const artworkResponse = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${randomId}`);
+                const artwork = await artworkResponse.json();
+
+                // 4. Обновляем интерфейс
+                updateUI(artwork);
+
+            } catch (error) {
+                console.error('Ошибка загрузки:', error);
+                text2.textContent = 'Не удалось загрузить данные. Обновите страницу.';
+            }
+        }
+
+        function updateUI(artwork) {
+            // Основное изображение (если есть)
+            if (artwork.primaryImageSmall) {
+                img.src = artwork.primaryImageSmall;
+            }
+
+            // Имя художника
+            h1.textContent = artwork.artistDisplayName || 'Неизвестный художник';
+
+            // Название работы
+            text2.textContent = `"${artwork.title}"` || 'Без названия';
+
+            // Дополнительная информация
+            text3.textContent = artwork.artistDisplayBio
+                ? `${artwork.artistDisplayBio} | ${artwork.objectDate}`
+                : artwork.objectDate || 'Дата создания неизвестна';
+
+            // Обновляем фон карточки
+            if (artwork.primaryImage) {
+                div.style.backgroundImage = `linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.6)), url(${artwork.primaryImage})`;
+            }
+        }
+
+        // Загружаем случайное произведение при загрузке страницы
+        loadRandomArtwork();
+
+        // Кнопка для обновления
+        const refreshBtn = document.createElement('button');
+        refreshBtn.textContent = 'Другое произведение';
+        refreshBtn.style.position = 'absolute';
+        refreshBtn.style.bottom = '30px';
+        refreshBtn.style.left = '50%';
+        refreshBtn.style.transform = 'translateX(-50%)';
+        refreshBtn.style.background = '#3498db';
+        refreshBtn.style.color = 'white';
+        refreshBtn.style.border = 'none';
+        refreshBtn.style.padding = '12px 24px';
+        refreshBtn.style.borderRadius = '30px';
+        refreshBtn.style.cursor = 'pointer';
+        refreshBtn.style.fontSize = '16px';
+        refreshBtn.style.transition = 'all 0.3s';
+        refreshBtn.onmouseover = () => {
+            refreshBtn.style.background = '#2980b9';
+            refreshBtn.style.transform = 'translateX(-50%) scale(1.05)';
+        };
+        refreshBtn.onmouseout = () => {
+            refreshBtn.style.background = '#3498db';
+            refreshBtn.style.transform = 'translateX(-50%) scale(1)';
+        };
+        refreshBtn.onclick = loadRandomArtwork;
+        div.appendChild(refreshBtn);
+    </script>
 </body>
+
 </html>

@@ -31,7 +31,8 @@ a {
     text-decoration: none;
     color: #000000;
 }
-a:hover{
+
+a:hover {
     color: #e70b0b;
 }
 
@@ -651,14 +652,17 @@ em {
 }
 
 .interview h1 {
+    font-family: var(--first-font);
     font-weight: 700;
     font-size: 50px;
 }
 
 .interview p {
+    font-family: var(--second-font);
     font-weight: 400;
     font-size: 18px;
 }
+
 .image-container {
     font-family: var(--first-font);
     display: flex;
@@ -748,6 +752,7 @@ em {
     .box-flex {
         gap: 30px;
     }
+
     .image-container {
         height: 600px;
         font-size: 2.5vw;
@@ -780,6 +785,7 @@ em {
     .video-block {
         padding: 0.5rem;
     }
+
     .image-container {
         height: 500px;
         font-size: 3vw;
@@ -832,6 +838,7 @@ em {
     .container {
         padding: 0 10px;
     }
+
     .image-container {
         height: 400px;
         font-size: 4vw;
@@ -960,6 +967,7 @@ em {
         padding: 0 20px !important;
         font-size: 16px !important;
     }
+
     .image-container {
         height: 300px;
         font-size: 4.5vw;

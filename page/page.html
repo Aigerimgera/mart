@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/css.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css.css">
     <title>Document</title>
 </head>
 
@@ -18,7 +18,6 @@
                     <img src="../img/mart_logo.svg" alt="logo">
                 </div>
                 <button class="but" onclick="openPopup()">Написать</button>
-
                 <div id="popup">
                     <div class="popup-content">
                         <span onclick="closePopup()" class="close">&times;</span>
@@ -28,92 +27,320 @@
                         <button class="send-btn" onclick="sendMessage()">Отправить</button>
                     </div>
                 </div>
-
                 <div id="alert-box" class="alert-box"></div>
             </div>
             <div class="nav">
-                <a href="./page3.html">Главная</a>
-                <a href="./page2.html">Произведение</a>
-                <a href="#">Места</a>
-                <a href="#">Мнение</a>
+                <a href="/index.html">Главная</a>
                 <a href="#">Новости</a>
+                <a href="./page1.html">Интервью</a>
+                <a href="./page2.html">Выставка</a>
+                <a href="./page3.html">Произведение</a>
                 <a href="#">Персоны</a>
-                <a href="../index.html">События</a>
+                <a href="#">События</a>
             </div>
         </div>
     </header>
     <main>
         <section>
             <div class="container">
-                <div class="work">
-                    <h1>Выставка работ Геннадия Козела открыта для всех</h1>
-                    <a class="interesting" href="#">Источник prvision.by , Дата: 12 Фев. 2022</a>
-                    <img src="../img/pageimg.jpg" alt="pageimg">
-                    <p>Бесплатная арт-галерея в центре Минска выставила картины-символы художника Геннадия Козела.
-                        Работы белоруса вдохновлены творчеством Веласкеса, Гойи и Рембрандта. Находится экспозиция в
-                        отделении Банка Дабрабыт на проспекте Победителей, 3, причем полотна можно увидеть как внутри,
-                        так и снаружи – за остекленным фасадом.</p>
-                    <p>В экспозицию вошли несколько десятков картин известного живописца. Среди них – портреты и
-                        образы-символы, которые предстоит разгадать посетителям. Как колорист Геннадий Козел смело
-                        играет цветами – от этого картины смотрятся эффектно и оставляют яркие впечатления. Многие
-                        полотна можно увидеть только на выставке.
-                    </p>
-                    <img src="../img/work1.jpg" alt="work">
-                    <p>Под выставку в Банке Дабрабыт выделили большую часть отделения и панорамный фасад. Причем сделали
-                        так, чтобы на каждой витрине было по две картины – по одной с внешней и внутренней стороны.
-                        Приобщаться к искусству можно и днем, и ночью. Внутри арт-галереи стоят мягкие стулья и диваны –
-                        можно пообщаться на фоне полотен.</p>
-                    <p>
-                        <i>«В цифровую эпоху много места для работы банка и не нужно, но мы хотим использовать
-                            пространство в центре Минска для того, чтобы увлечь людей, показать что-то новое, заставить
-                            задуматься и отвлечься от городской суеты. И с этой задачей работы Геннадия Козела
-                            справляются прекрасно. Ведь каждая картина – это загадка, которую не так просто и разгадать.
-                            И на этом мы не остановимся – впереди у арт-галереи много новых экспозиций»,</i> –
-                        рассказывают в Банке Дабрабыт.
-                    </p>
-                    <img src="../img/work2.jpg" alt="work2">
-                    <p>Выставка открыта с понедельника по пятницу с 09:00 до 20:00 и в субботу с 10:00 до 18:00. Вход
-                        свободный, обслуживаться для этого в Банке Дабрабыт необязательно. Геннадий Козел пишет картины
-                        и занимается монументальным искусством. Его работы представлены в частных коллекциях Беларуси,
-                        России, США, Великобритании, Франции и Германии. Художник умело использует разные оттенки и не
-                        боится работать с черным цветом. Картины колориста содержат спрятанные символы. </p>
-                    <em>Еще на эту тему</em>
+                <div class="column-left">
+                    <div class="exhibition">
+                        <div class="block1-line">
+                            <img src="../img/pictures.png" alt="kartina">
+                            <a href="#">Выставка работ Геннадия Козела открыта для всех</a>
+                            <a href="#">Интервью</a>
+                        </div>
+                        <div class="exhibition-block">
+                            <img src="../img/pictures1.png" alt="kartina2">
+                            <h2>Хата, корова, фэшн: съемку из деревни Глубокое напечатали в нью-йоркском
+                                глянце
+                            </h2>
+                            <a href="#">Интервью</a>
+                        </div>
+                    </div>
+                    <div class="exhibition-block1">
+                        <img src="../img/pictures2.png" alt="kartina3">
+                        <h1>Прикоснуться к Бэнкси. Беларуска, которая попала в «Топ-100 лучших художников
+                            мира»</h1>
+                        <p>За спиной – «художка» и колледж. в руках – охапка кистей и тюбики с краской. какие
+                            перспективы
+                            могут ожидать юных живописцев, через что придется пройти, <br> чтобы засветиться и
+                            жить не
+                            «взаймы»?
+                        </p>
+                        <a href="#">Интервью &bull; Art</a>
+                    </div>
+                    <div class="exhibition-block2">
+                        <div class="block2-line">
+                            <p>Валерий Песин: “Отношусь к рисованию, как к своего рода поручению”</p>
+                        </div>
+                        <div class="block2-line">
+                            <p>Триеннале «Концепт» во Дворце искусства</p>
+                        </div>
+                        <div class="block2-line">
+                            <p>Международный фестиваль перформативного искусства «Перформенск»</p>
+                        </div>
+                        <div class="block2-line">
+                            <p>Фестиваль искусства «Арт-Минск-2021»</p>
+                        </div>
+                        <p>Международный фестиваль перформативного искусства «Перформенск»</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="topics-flex">
-                    <div class="topics">
-                        <img src="../img/topics1.png" alt="topics1">
-                        <p>19 ноября 2020</p>
-                        <a class="interesting" href="#">19 ноября в столице <br> стартует фестиваль <br> искусства «Арт
-                            <br> -Минск-2020»</a>
+                <div class="video-block">
+                    <p class="text">Видео на Mart.BY</p>
+                    <div class="block">
+                        <div class="video-text">
+                            <iframe width="250" height="140"
+                                src="https://www.youtube.com/embed/R-dcknht-zE?si=EIpXgWkxZrDq8DeR"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h2>"Вдохновение напало" <br> Анна Силивончик</h2>
+                            <div class="block6">
+                                <img src="../img/Group.png" alt="Group">
+                                <p>3:15</p>
+                            </div>
+                        </div>
+                        <div class="video-text">
+                            <iframe width="250" height="140"
+                                src="https://www.youtube.com/embed/VuM2lEwUElQ?si=jJkGvp10MUbbQgvq"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h2>SEASONS </h2>
+                            <div class="block6">
+                                <img src="../img/Group.png" alt="Group">
+                                <p>2:35</p>
+                            </div>
+                        </div>
+                        <div class="video-text">
+                            <iframe width="250" height="140"
+                                src="https://www.youtube.com/embed/akTKvXnrsQ4?si=-UtvNn7eZRn0jtIr"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h2>Acrylic painting tulip flowers</h2>
+                            <div class="block6">
+                                <img src="../img/Group.png" alt="Group">
+                                <p>8:05</p>
+                            </div>
+                        </div>
+                        <div class="video-text">
+                            <iframe width="250" height="140"
+                                src="https://www.youtube.com/embed/q1S9He-5zvo?si=eU4GV1NocCXKymBO"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h2>Sunflower painting </h2>
+                            <div class="block6">
+                                <img src="../img/Group.png" alt="Group">
+                                <p>8:05</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="topics">
-                        <img src="../img/topics2.jpg" alt="topics2">
-                        <p>31 марта 2020</p>
-                        <a class="interesting" href="#">Изоляция. Выставка <br> Романа Каминского</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="block-art">
+                    <div class="block7">
+                        <h2>ART</h2>
+                        <div class="block7-line">
+                            <h3>«Художник рисует красками, <br> провокатор – судьбами людей»</h3>
+                            <p>Человек с мышлением художника <br> – редкость. Тем приятнее100 лучших <br>
+                                художников
+                                мира»
+                            </p>
+                            <a class="interesting" href="#">Интервью</a>
+                        </div>
+                        <h3>Хата, корова, фэшн: съемку из <br> деревни Глубокое напечатали в <br> нью-йоркском
+                            глянце
+                        </h3>
                     </div>
-                    <div class="topics">
-                        <img src="../img/topics3.jpg" alt="topics3">
-                        <p>18 марта 2020</p>
-                        <a class="interesting" href="#">Спартак Арутюнян, <br> живописец и скульптор</a>
+                    <div class="block8">
+                        <img src="../img/pictures5.png" alt="kartina5">
+                        <a class="interesting" href="#">Подпись к картинке, если она есть</a>
                     </div>
-                    <div class="topics">
-                        <img src="../img/topics4.jpg" alt="topics4">
-                        <p>17 марта 2020</p>
-                        <a class="interesting" href="#">Персональная выставка <br> Сергея Гриневича</a>
+                    <div class="block9">
+                        <div class="block9-line">
+                            <p>Во Дворце искусства открылись <br> сразу четыре выставки Месяц <br> фотографии в
+                                Минске
+                                2020
+                            </p>
+                        </div>
+                        <div class="block9-line">
+                            <p>Выставка художника-графика <br> Андрея Басалыги <br> «Антология».Трыенале
+                                сучаснага <br>
+                                мастацтва
+                            </p>
+                        </div>
                     </div>
-                    <div class="topics">
-                        <img src="../img/topics5.jpg" alt="topics5">
-                        <p>21 февраля 2020</p>
-                        <a class="interesting" href="#">Выставка живописи Анны <br> Силивончик «Много букв»</a>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="news-block">
+                    <div class="news">
+                        <h3>Последние материлы</h3>
+                        <div class="news-item">
+                            <img src="../img/news1.png" alt="news">
+                            <div class="news-text">
+                                <h3>«Художник рисует красками, провокатор <br> – судьбами людей»</h3>
+                                <br>
+                                <p>Человек с мышлением художника – редкость. <br> Тем приятнее100 лучших
+                                    художников
+                                    мира»
+                                </p>
+                                <a class="interesting" href="#">Интервью &bull; Интервью &bull; Интервью </a>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="../img/news2.png" alt="news2">
+                            <div class="news-text">
+                                <h3>«Художник рисует красками, провокатор – <br> судьбами людей»</h3>
+                                <br>
+                                <p>Человек с мышлением художника – редкость. <br> Тем приятнее100 лучших
+                                    художников
+                                    мира»
+                                </p>
+                                <a class="interesting" href="#">Интервью &bull; Интервью &bull; Интервью </a>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="../img/news3.png" alt="news3">
+                            <div class="news-text">
+                                <h2>«Художник рисует красками, провокатор – <br> судьбами людей»</h2>
+                                <br>
+                                <p>Человек с мышлением художника – редкость. <br> Тем приятнее100 лучших
+                                    художников
+                                    мира»
+                                </p>
+                                <a class="interesting" href="#">Интервью &bull; Интервью &bull; Интервью </a>
+                            </div>
+                        </div>
+                        <div class="new-item">
+                            <img src="../img/news4.png" alt="news4">
+                            <div class="news-text">
+                                <h2>Игорь Тишин: мультимедийный проект <br> «Тихое партизанское движение», 1997
+                                </h2>
+                                <br>
+                                <p>Таня Артимович подготовила эссе по <br> мультимедийному проекту Игоря Тишина
+                                    <br>
+                                    «Тихое
+                                    партизанское движение» 1997 года и <br> проанализировала, как изменилось
+                                    видение
+                                    <br>
+                                    партизанского движения в белорусском <br> искусстве. Статья публикуется на
+                                    белорусском
+                                    <br> языке.
+                                </p>
+                                <a class="interesting" href="#">Интервью &bull; Интервью &bull; Интервью </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="topics">
-                        <img src="../img/topics6.jpg" alt="topics6">
-                        <p>7 февраля 2020</p>
-                        <a class="interesting" href="#">Излом</a>
+                    <div class="newss">
+                        <h3>Анонсы</h3>
+                        <img src="../img/anon.png" alt="anon">
+                        <p>Если вы знаете о новых выставках и меропритиях, то</p>
+                        <a class="red" href="#">напишите нам.</a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="box-flex">
+                    <div class="highlight">
+                        <h3>Места</h3>
+                        <img src="../img/img1.png" alt="img1">
+                        <div class="highlight-line">
+                            <p>Валерий Песин: “Отношусь к <br> рисованию, как к<br> своего рода поручению”
+                            </p>
+                        </div>
+                        <div class="highlight-line">
+                            <p>I Триеннале «Концепт» во Дворце <br> искусства
+                            </p>
+                        </div>
+                        <p>Международный фестиваль <br> перформативного искусства <br> «Перформенск»
+                        </p>
+                    </div>
+                    <div class="highlight">
+                        <h3>Интервью</h3>
+                        <img src="../img/img2.png" alt="img2">
+                        <div class="highlight-line">
+                            <p>Валерий Песин: “Отношусь к <br> рисованию, как к<br> своего рода поручению”
+                            </p>
+                        </div>
+                        <div class="highlight-line">
+                            <p>I Триеннале «Концепт» во Дворце <br> искусства
+                            </p>
+                        </div>
+                        <p>Международный фестиваль <br> перформативного искусства <br> «Перформенск»
+                        </p>
+                    </div>
+                    <div class="highlight">
+                        <h3>Мнения</h3>
+                        <img src="../img/img5.png" alt="img5">
+                        <div class="highlight-line">
+                            <p>Валерий Песин: “Отношусь к <br> рисованию, как к<br> своего рода поручению”
+                            </p>
+                        </div>
+                        <div class="highlight-line">
+                            <p>I Триеннале «Концепт» во Дворце <br> искусства
+                            </p>
+                        </div>
+                        <p>Международный фестиваль <br> перформативного искусства <br> «Перформенск»
+                        </p>
+                    </div>
+                    <div class="highlight">
+                        <h3>Новости</h3>
+                        <img src="../img/img3.png" alt="img3">
+                        <div class="highlight-line">
+                            <p>Валерий Песин: “Отношусь к <br> рисованию, как к<br> своего рода поручению”
+                            </p>
+                        </div>
+                        <div class="highlight-line">
+                            <p>I Триеннале «Концепт» во Дворце <br> искусства
+                            </p>
+                        </div>
+                        <p>Международный фестиваль <br> перформативного искусства <br> «Перформенск»
+                        </p>
+                    </div>
+                    <div class="highlight">
+                        <h3>Персоны</h3>
+                        <img src="../img/img4.png" alt="img4">
+                        <div class="highlight-line">
+                            <p>Валерий Песин: “Отношусь к <br> рисованию, как к<br> своего рода поручению”
+                            </p>
+                        </div>
+                        <div class="highlight-line">
+                            <p>I Триеннале «Концепт» во Дворце <br> искусства
+                            </p>
+                        </div>
+                        <p>Международный фестиваль <br> перформативного искусства <br> «Перформенск»
+                        </p>
+                    </div>
+                    <div class="highlight">
+                        <h3>События</h3>
+                        <img src="../img/img2.png" alt="img2">
+                        <div class="highlight-line">
+                            <p>Валерий Песин: “Отношусь к <br> рисованию, как к<br> своего рода поручению”
+                            </p>
+                        </div>
+                        <div class="highlight-line">
+                            <p>I Триеннале «Концепт» во Дворце <br> искусства
+                            </p>
+                        </div>
+                        <p>Международный фестиваль <br> перформативного искусства <br> «Перформенск»
+                        </p>
                     </div>
                 </div>
             </div>
@@ -137,4 +364,5 @@
     </main>
     <script src="../style.js"></script>
 </body>
+
 </html>
